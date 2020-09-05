@@ -5,36 +5,37 @@ import Nav from "./components/Nav/Nav";
 import Arch from "./components/Arch";
 import Web from "./components/Web";
 import Opening from "./components/Opening";
+import Contact from "./components/Contact"
 
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path="/architecture">
-        <div>
-          <Arch/>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/architecture">
+            <div>
+              <Arch />
             </div>
-        </Route>
-        <Route  path="/webdesign">
-          <div>
-          <Web/>
+          </Route>
+          <Route path="/webdesign">
+            <div>
+              <Web />
             </div>
-        </Route>
-        <Route path ="/contact">
-        <div>
-
-        </div>
-        </Route>
-        <Route  path="/">
-        <div>
-        <Opening/>
-        </div>
-        </Route>
-      </Switch>
-    </Router>
-  </div>
+          </Route>
+          <Route path="/contact">
+            <div>
+              <Contact />
+            </div>
+          </Route>
+          <Route path="/">
+            <div>
+              <Opening />
+            </div>
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
