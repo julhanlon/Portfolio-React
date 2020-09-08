@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+}
+
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+    font-size: 1rem;
+    
+}
+
+li {
+    left: 0;
+}

@@ -1,31 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Nav.css"
 
-const navStyle = {
-  fontSize: "1.5rem",
-  color:"black"
-}
+
 
 const Nav = () => {
   return (
     <>
-      <nav className="floatRight mt-4">
-        <div className="container" style = {navStyle}>
-          <Link to="/" className="">
+      <nav className=" mt-4 ">
+        <div className="list">
+          <Link to="/" style = {{fontSize: "1.3rem"}}>
             Julia Hanlon
           </Link>
           <ul className="">
-            <li style = {navStyle}>
+            <li >
               <Link to="/webdesign" className="">
                Web Development
               </Link>
             </li>
-            <li style = {navStyle}>
+            <li >
               <Link to="/architecture" className="">
                 Architecture
               </Link>
             </li>
-            <li style = {navStyle}>
+            <li >
               <Link to="/contact" className="">
                 Contact
               </Link>
